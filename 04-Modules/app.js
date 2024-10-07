@@ -7,6 +7,15 @@ console.log("Main entry point of the backend...");
 // console.log(`Sum of two nos are`, calculateSub(30, 10));
 
 //! ES Module
-import { calculateSub, calculateSum } from "./add.js";
-console.log(`Sum of two nos are`, calculateSum(10, 20));
-console.log(`Sum of two nos are`, calculateSub(30, 10));
+// import { calculateSub, calculateSum } from "./add.js";
+// console.log(`Sum of two nos are`, calculateSum(10, 20));
+// console.log(`Sum of two nos are`, calculateSub(30, 10));
+
+//! Importing from calculate module
+const { SumOfTwoNos, SubOfTwoNos, MulOfTwoNos } = require("./calculate");
+const a = 20,
+  b = 10;
+
+SumOfTwoNos(a, b);
+SubOfTwoNos(a, b);
+MulOfTwoNos(a, b);
