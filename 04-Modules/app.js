@@ -19,3 +19,7 @@ const a = 20,
 SumOfTwoNos(a, b);
 SubOfTwoNos(a, b);
 MulOfTwoNos(a, b);
+
+//! Importing json file
+const data = require("./data.json");
+console.log(data);
